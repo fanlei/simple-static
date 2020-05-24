@@ -17,7 +17,7 @@ if (! is_dir($wd)) {
     exit("Invalid working directory: $wd");
 }
 
-$configFilename =  $wd._DS_.'staticsimple.json';
+$configFilename =  $wd._DS_.'simplestatic.json';
 if (is_file($configFilename)) {
     $config = json_decode(file_get_contents($configFilename), true);
     if (empty($config)) {
