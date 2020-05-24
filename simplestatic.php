@@ -32,7 +32,7 @@ $layoutFile = $config['layout-file'] ?? $templateDir._DS_.'layout.php';
 $publicDir = $config['public-dir'] ?? $rootDir._DS_.'public';
 $staticExt = $config['static-ext'] ?? 'html';
 
-echo "\nMakeStatic starts working at $wd \n---\n";
+echo "\nSimpleStatic starts working at $wd \n---\n";
 $staticFileCount = 0;
 foreach (scandir($pageDir) as $filename) {
     $pageFile = $pageDir._DS_.$filename;
